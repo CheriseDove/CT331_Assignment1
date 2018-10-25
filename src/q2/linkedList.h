@@ -17,5 +17,15 @@ listElement* insertAfter(listElement* after, char* data, size_t size);
 //Delete the element after the given el
 void deleteAfter(listElement* after);
 
+//Push a new element. Update List Ref.
+void push(listElement** list, char* data, size_t size);
 
+//Populate element from the head. Update List Ref.
+listElement* pop(listElement** *list);
+
+//Enqueue a new element onto the head. Update list Ref.
+void enqueue(listElement** list, char* data, size_t size);
+
+//Dequeue an element from the tail of the list.
+listElement* dequeue(listElement* list);
 #endif
